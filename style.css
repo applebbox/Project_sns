@@ -1,0 +1,122 @@
+/*메인컬러*/
+:root
+    {--main-color: rgb(67, 82, 168);}
+
+*
+    {margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+body
+    {font-family:'Noto Sans KR', sans-serif;
+    color: #444;
+    font-size: 16px;}
+
+a
+    {text-decoration: none;}
+
+ul
+    {list-style-type: none;}
+/*아이콘 통괄적인 크기 조정 - 코드에서 조정가능하다*/
+.iconify
+    {font-size: 48px;}
+/*vw : 뷰포트 단위*/
+header
+    {position: absolute;
+    width: 100vw;}
+
+header > .back-btn
+    {position: absolute;
+    left: 20px;
+    top: 20px;}
+
+header > .toggle-btn
+    {position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;}
+
+.back-btn , .toggle-btn
+    {font-size: 28px;
+    color: white;
+    z-index: 999;}
+
+.card
+    {position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: yellow;}
+
+.card > figure
+    {height: 61vh;
+    background: orange;
+    background-image: url(images/profile.jpg);
+    background-size: cover;
+    position: relative;}
+
+/*수직 그라디언트*/
+.card > figure > .filter
+    {position: absolute;
+    width: 100%;
+    height: 59vh;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.034) , rgba(0, 0, 0, 0.253)20%);}
+
+.card .info
+    {height: 43vh;
+    width: 100vw;
+    position: absolute;
+    background: rgb(184, 222, 236);
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.card > .info .container
+    {width: 100vw;}
+
+.card > .info .name
+    {font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;}
+
+.card > .info .location
+    {margin-bottom: 26px;}
+
+.card > .info .count-info
+    {display: flex;
+    margin-bottom: 40px;}
+
+.card > .info .count-info > li
+    {flex: 1;
+    border-right: 1px solid black;}
+
+    .card > .info .count-info > li:last-child
+    {border-right: none;}
+
+.card > .info .count-info  .count
+    {font-size: 30px;}
+
+.card > .info .count-info  .title
+    {font-size: 12px;}
+
+.btn
+    {width: 140px;
+    height: 40px;
+    border: 1px solid var(--main-color);}
+
+.follow-btn
+    {background: var(--main-color);
+    color: white;
+    margin-right: 15px;
+    }
+
+.message-btn
+    {color: var(--main-color);
+    margin-left: 15px;}
